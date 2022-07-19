@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <!-- CSS only -->
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+
+    <title>Document</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">metroinfo.com</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+  
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Lines
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a style="color: blue;" class="dropdown-item" href="/lines?color=blue">Blue</a></li>
+              <li> <a style="color: green;" class="dropdown-item" href="/lines?color=green">Green</a></li>
+              <li> <a style="color: red;" class="dropdown-item" href="/lines?color=red">Red</a></li>
+              <li> <a style="color: yellow;" class="dropdown-item" href="/lines?color=yellow">Yellow</a></li>
+              <li><a style="color: pink;" class="dropdown-item" href="/lines?color=pink">Pink</a></li>
+              <li> <a style="color: grey;" class="dropdown-item" href="/lines?color=grey">Grey</a></li>
+              <li> <a style="color: magenta;" class="dropdown-item" href="/lines?color=magenta">Magenta</a></li>
+              <li> <a style="color: aqua;" class="dropdown-item" href="/lines?color=aqua">Aqua</a></li>
+              <li> <a style="color: violet;" class="dropdown-item" href="/lines?color=violet">Violet</a></li>
+              <li><a style="color: orange;" class="dropdown-item" href="/lines?color=orange">Orange</a></li>
+  
+            </ul>
+  
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+  
+      </div>
+    </div>
+  </nav>
+ <br>
+ <div id="header" class="d-flex justify-content-around" style="width: 100px;padding:5px;margin-left:auto;margin-right:auto;background-color: <%- color %>;"> 
+  
+ <p><b style="color: white;" ><%- color %></b></p> 
+</div>
+ <br>
+      <div style="width:300px ;margin-left:auto;margin-right:auto;text-align: center;">
+        <% for (const item in station) {
+            if(station[item].line[0] == color) { 
+
+                if(station[item].line.length > 1){ %>
+                    <p> <i style='font-size:14px' class='fas'>&#xf0b2;</i> <%- station[item].name %> 
+                    <% for(i=0;i < station[item].line.length;i++)
+                    { %>
+                      <i style='font-size:14px;color: <%- station[item].line[i] %> ;' class='fas'>&#xf152;</i>
+                      <%  }
+                      %> </p>
+                      <%
+                } 
+              else{ %>
+
+                <p>  <%- station[item].name %> </p>
+             <% } } } %>
+      </div>
+      <br><br>
+</body>
+<style>
+    #header{
+    box-shadow: 0px 3px 13px 0px rgba(0,0,0,0.6);
+-webkit-box-shadow: 0px 3px 13px 0px rgba(0,0,0,0.6);
+-moz-box-shadow: 0px 3px 13px 0px rgba(0,0,0,0.6);
+border-radius: 12px;
+  }
+</style>

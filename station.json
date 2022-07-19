@@ -1,0 +1,1096 @@
+{
+    "0":{
+        "name":"Shaheed Sthal (New Bus Adda)",
+        "line":["red"]
+
+        },
+    "1":{
+        "name":"Hindon River",
+        "line":["red"]
+    
+        },   
+    "2":{
+        "name":"Arthala",
+        "line":["red"]
+    },
+    "3":{
+        "name":"Mohan Nagar",
+        "line":["red"]
+    },
+    "4":{
+        "name":"Shyam Park",
+        "line":["red"]
+    },
+    "5":{
+        "name":"Major Mohit Sharma Rajendra Nagar",
+        "line":["red"]
+    },
+    "6":{
+        "name":"Raj Bagh",
+        "line":["red"]
+    },
+    "7":{
+        "name":"Shaheed Nagar",
+        "line":["red"]
+    } ,
+    "8":{
+        "name":"Dilshad Garden",
+        "line":["red"]
+    }  ,
+    "9":{
+        "name":"Jhilmil",
+        "line":["red"]
+    }  ,
+    "10":{
+        "name":"Mansarovar Park",
+        "line":["red"]
+    }  ,
+    "11":{
+        "name":"Shahdara",
+        "line":["red"]
+    }  ,
+    "12":{
+        "name":"Welcome",
+        "line":["red","pink"]
+    }  ,
+    "13":{
+        "name":"Sheelampur",
+        "line":["red"]
+    }  ,
+    "14":{
+        "name":"Shastri Park",
+        "line":["red"]
+    }  ,
+    "15":{
+        "name":"Kashmere Gate",
+        "line":["red","yellow","violet"]
+    }  ,
+    "16":{
+        "name":"Tis Hazari",
+        "line":["red"]
+    }  ,
+    "17":{
+        "name":"Pulbangash",
+        "line":["red"]
+    }  ,
+    "18":{
+        "name":"Pratap Nagar",
+        "line":["red"]
+    }  ,
+    "19":{
+        "name":"Shastri Nagar",
+        "line":["red"]
+    }  ,
+    "20":{
+        "name":"Inderlok",
+        "line":["red","green"]
+    }  ,
+    "21":{
+        "name":"Kanhaiya Nagar",
+        "line":["red"]
+    }  ,
+    "22":{
+        "name":"Keshavpuram",
+        "line":["red"]
+    }  ,
+    "23":{
+        "name":"Netaji Shubhash Palace",
+        "line":["red","pink"]
+    }  ,
+    "24":{
+        "name":"Kohat Enclave",
+        "line":["red"]
+    }  ,
+    "25":{
+        "name":"Pitampura",
+        "line":["red"]
+    }  ,
+    "26":{
+        "name":"Rohini East",
+        "line":["red"]
+    }  ,
+    "27":{
+        "name":"Rohini West",
+        "line":["red"]
+    }  ,
+    "28":{
+        "name":"Rithala",
+        "line":["red"]
+    }
+    ,
+    "29":{
+        "name":"Samaypur Badli",
+        "line":["yellow"]
+    }  ,
+    "30":{
+        "name":"Rohini Sec 18,19",
+        "line":["yellow"]
+    }  ,
+    "31":{
+        "name":"Haiderpur Badli Mor",
+        "line":["yellow"]
+    }  ,
+    "32":{
+        "name":"Jahangirpuri",
+        "line":["yellow"]
+    }  ,
+    "33":{
+        "name":"Adarsh Nagar",
+        "line":["yellow"]
+    }  ,
+    "34":{
+        "name":"Azadpur",
+        "line":["yellow","pink"]
+    }  ,
+    "35":{
+        "name":"Model Town",
+        "line":["yellow"]
+    }  ,
+    "36":{
+        "name":"GTB Nagar",
+        "line":["yellow"]
+    }  ,
+    "37":{
+        "name":"Vishwavidyalya",
+        "line":["yellow"]
+    }  ,
+    "38":{
+        "name":"Vidhan Sabha",
+        "line":["yellow"]
+    }  ,
+    "39":{
+        "name":"Civil Lines",
+        "line":["yellow"]
+    }  ,
+    "40":{
+        "name":"Kashmere Gate",
+        "line":["yellow","red","violet"]
+    }  ,
+    "41":{
+        "name":"Chandni Chowk",
+        "line":["yellow"]
+    }  ,
+    "42":{
+        "name":"Chawdi Bazar",
+        "line":["yellow"]
+    }  ,
+    "43":{
+        "name":"New Delhi",
+        "line":["yellow","orange"]
+    }  ,
+    "44":{
+        "name":"Rajiv Chowk",
+        "line":["yellow","blue"]
+    }  ,
+    "45":{
+        "name":"Patel Chowk",
+        "line":["yellow"]
+    }  ,
+    "46":{
+        "name":"Central Secretariat",
+        "line":["yellow","violet"]
+    }  ,
+    "47":{
+        "name":"Udyog Bhawan",
+        "line":["yellow"]
+    }  ,
+    "48":{
+        "name":"Lok Kalyan Marg",
+        "line":["yellow"]
+    }  ,
+    "49":{
+        "name":"Jor Bagh",
+        "line":["yellow"]
+    }  ,
+    "50":{
+        "name":"Delhi Haat INA",
+        "line":["yellow","pink"]
+    }  ,
+    "51":{
+        "name":"AIIMS",
+        "line":["yellow"]
+    }  ,
+    "52":{
+        "name":"Green Park",
+        "line":["yellow"]
+    }  ,
+    "53":{
+        "name":"Hauz Khas",
+        "line":["yellow","magenta"]
+    }  ,
+    "54":{
+        "name":"Malviya Nagar",
+        "line":["yellow"]
+    }  ,
+    "55":{
+        "name":"Saket",
+        "line":["yellow"]
+    }  ,
+    "56":{
+        "name":"Qutab Minar",
+        "line":["yellow"]
+    }  ,
+    "57":{
+        "name":"Chhattarpur",
+        "line":["yellow"]
+    }  ,
+    "58":{
+        "name":"Sultanpur",
+        "line":["yellow"]
+    }  ,
+    "59":{
+        "name":"Ghitorni",
+        "line":["yellow"]
+    }  ,
+    "60":{
+        "name":"Arjan Garh",
+        "line":["yellow"]
+    }  ,
+    "61":{
+        "name":"Guru Dronacharya",
+        "line":["yellow"]
+    }  ,
+    "62":{
+        "name":"Sikandarpur",
+        "line":["yellow"]
+    }  ,
+    "63":{
+        "name":"MG Road",
+        "line":["yellow"]
+    }  ,
+    "64":{
+        "name":"IFFCO Chowk",
+        "line":["yellow"]
+    }  ,
+    "65":{
+        "name":"Huda City Centre",
+        "line":["yellow"]
+    }  , 
+    "66":{
+        "name":"Dwarka sec 21",
+        "line":["blue","orange"]
+    }  , 
+    "67":{
+        "name":"Dwarka sec 8",
+        "line":["blue"]
+    }  , 
+    "68":{
+        "name":"Dwarka sec 9",
+        "line":["blue"]
+    }  , 
+    "69":{
+        "name":"Dwarka sec 10",
+        "line":["blue"]
+    }  , 
+    "70":{
+        "name":"Dwarka sec 11",
+        "line":["blue"]
+    }  , 
+    "71":{
+        "name":"Dwarka sec 12",
+        "line":["blue"]
+    }  , 
+    "72":{
+        "name":"Dwarka sec 13",
+        "line":["blue"]
+    }  , 
+    "73":{
+        "name":"Dwarka sec 14",
+        "line":["blue"]
+    }  , 
+    "74":{
+        "name":"Dwarka",
+        "line":["blue","grey"]
+    }  , 
+    "75":{
+        "name":"Dwarka Mor",
+        "line":["blue"]
+    }  , 
+    "76":{
+        "name":"Nawada",
+        "line":["blue"]
+    }  , 
+    "77":{
+        "name":"Uttam Nagar West",
+        "line":["blue"]
+    }  , 
+    "78":{
+        "name":"Uttam Nagar East",
+        "line":["blue"]
+    }  , 
+    "79":{
+        "name":"Janakpuri West",
+        "line":["blue","magenta"]
+    }  , 
+    "80":{
+        "name":"Janakpuri East",
+        "line":["blue"]
+    }  , 
+    "81":{
+        "name":"Huda City Centre",
+        "line":["blue"]
+    }  , 
+    "82":{
+        "name":"Tilak Nagar",
+        "line":["blue"]
+    }  , 
+    "83":{
+        "name":"Subhash Nagar",
+        "line":["blue"]
+    }  , 
+    "84":{
+        "name":"Tagore Garden",
+        "line":["blue"]
+    }  , 
+    "85":{
+        "name":"Rajouri Garden",
+        "line":["blue","pink"]
+    }  , 
+    "86":{
+        "name":"Ramesh Nagar",
+        "line":["blue"]
+    }  , 
+    "87":{
+        "name":"Moti Nagar",
+        "line":["blue"]
+    }  , 
+    "88":{
+        "name":"Kirti Nagar",
+        "line":["blue","green"]
+    }  , 
+    "89":{
+        "name":"Shadipur",
+        "line":["blue"]
+    }  , 
+    "90":{
+        "name":"Patel Nagar",
+        "line":["blue"]
+    }  , 
+    "91":{
+        "name":"Rajendra Palace",
+        "line":["blue"]
+    }  , 
+    "92":{
+        "name":"Karol Bagh",
+        "line":["blue"]
+    }  , 
+    "93":{
+        "name":"Jhandewalan",
+        "line":["blue"]
+    }  , 
+    "94":{
+        "name":"RK Ashram Marg",
+        "line":["blue"]
+    }  , 
+    "95":{
+        "name":"Rajiv Chowk",
+        "line":["blue","yellow"]
+    }  , 
+    "96":{
+        "name":"Barakhamba Road",
+        "line":["blue"]
+    }  , 
+    "97":{
+        "name":"Mandi House",
+        "line":["blue","violet"]
+    }  , 
+    "98":{
+        "name":"Supreme Court",
+        "line":["blue"]
+    }  , 
+    "99":{
+        "name":"Indraprasth",
+        "line":["blue"]
+    }  , 
+    "100":{
+        "name":"Yamuna Bank",
+        "line":["blue"]
+    }  , 
+    "101":{
+        "name":"Akshardham",
+        "line":["blue"]
+    }  , 
+    "102":{
+        "name":"Mayur Vihar Phase 1",
+        "line":["blue","pink"]
+    }  , 
+    "103":{
+        "name":"Mayur Vihar Extension",
+        "line":["blue"]
+    }  , 
+    "104":{
+        "name":"New Ashok Nagar",
+        "line":["blue"]
+    }  , 
+    "105":{
+        "name":"Noida sec 15",
+        "line":["blue"]
+    }  , 
+    "106":{
+        "name":"Noida sec 16",
+        "line":["blue"]
+    }  , 
+    "107":{
+        "name":"Noida sec 18",
+        "line":["blue"]
+    }  , 
+    "108":{
+        "name":"Botenical Garden",
+        "line":["blue","magenta"]
+    }  , 
+    "109":{
+        "name":"Golf Course",
+        "line":["blue"]
+    }  , 
+    "110":{
+        "name":"Noida City Centre",
+        "line":["blue"]
+    }  , 
+    "111":{
+        "name":"Noida sec 34",
+        "line":["blue"]
+    }  , 
+    "112":{
+        "name":"Noida sec 52",
+        "line":["blue","aqua"]
+    }  , 
+    "113":{
+        "name":"Noida sec 61",
+        "line":["blue"]
+    }  , 
+    "114":{
+        "name":"Noida sec 59",
+        "line":["blue"]
+    }  , 
+    "115":{
+        "name":"Noida sec 62",
+        "line":["blue"]
+    }   , 
+    "116":{
+        "name":"Noida Electric City",
+        "line":["blue"]
+    }  , 
+    "117":{
+        "name":"Yamuna Bank",
+        "line":["blue"]
+    }  , 
+    "118":{
+        "name":"Laxmi Nagar",
+        "line":["blue"]
+    }  , 
+    "119":{
+        "name":"Nirman Vihar",
+        "line":["blue"]
+    }  , 
+    "120":{
+        "name":"Preet Vihar",
+        "line":["blue"]
+    }  , 
+    "121":{
+        "name":"Karkarduma",
+        "line":["blue","pink"]
+    }  , 
+    "122":{
+        "name":"Anand Vihar ISBT",
+        "line":["blue","pink"]
+    }  , 
+    "123":{
+        "name":"Kaushambi",
+        "line":["blue"]
+    }  , 
+    "124":{
+        "name":"Vaishali",
+        "line":["blue"]
+    }  , 
+    "125":{
+        "name":"Kirti Nagar",
+        "line":["green","blue"]
+    } , 
+    "126":{
+        "name":"Satguru Ram Singh Marg",
+        "line":["green"]
+    } , 
+    "127":{
+        "name":"Ashok Park Main",
+        "line":["green"]
+    } , 
+    "128":{
+        "name":"Inderlok",
+        "line":["green","red"]
+    } , 
+    "129":{
+        "name":"Punjabi Bagh",
+        "line":["green"]
+    } , 
+    "130":{
+        "name":"Punjabi Bagh West",
+        "line":["green","pink"]
+    } , 
+    "131":{
+        "name":"Shivaji Park",
+        "line":["green"]
+    } , 
+    "132":{
+        "name":"Madipur",
+        "line":["green"]
+    } , 
+    "133":{
+        "name":"Paschim Vihar East",
+        "line":["green"]
+    } , 
+    "134":{
+        "name":"Paschim Vihar West",
+        "line":["green"]
+    } , 
+    "135":{
+        "name":"Peeragari",
+        "line":["green"]
+    } , 
+    "136":{
+        "name":"Udhyog Nagar",
+        "line":["green"]
+    } , 
+    "137":{
+        "name":"Maharaja Surajmal Stadium",
+        "line":["green"]
+    } , 
+    "138":{
+        "name":"Nangloi",
+        "line":["green"]
+    } , 
+    "139":{
+        "name":"Nangloi Railway Station",
+        "line":["green"]
+    } , 
+    "140":{
+        "name":"Rajdhani park",
+        "line":["green"]
+    } , 
+    "141":{
+        "name":"Mundaka",
+        "line":["green"]
+    } , 
+    "142":{
+        "name":"Mundaka Industrial Area",
+        "line":["green"]
+    } , 
+    "143":{
+        "name":"Ghevra",
+        "line":["green"]
+    } , 
+    "144":{
+        "name":"Tikri Kalan",
+        "line":["green"]
+    } , 
+    "145":{
+        "name":"Tikri Border",
+        "line":["green"]
+    } , 
+    "146":{
+        "name":"Pandit Shree Ram Marg",
+        "line":["green"]
+    } , 
+    "147":{
+        "name":"Bahadurgarh City",
+        "line":["green"]
+    } , 
+    "148":{
+        "name":"Bregadier Hosiyar Singh",
+        "line":["green"]
+    } , 
+    "149":{
+        "name":"Kashmere Gate",
+        "line":["violet","red","yellow"]
+    } , 
+    "150":{
+        "name":"Lal Quila",
+        "line":["violet"]
+    } , 
+    "151":{
+        "name":"Jama Masjid",
+        "line":["violet"]
+    } , 
+    "152":{
+        "name":"Delhi Gate",
+        "line":["violet"]
+    } , 
+    "153":{
+        "name":"ITO",
+        "line":["violet"]
+    } , 
+    "154":{
+        "name":"Mandi House",
+        "line":["violet","blue"]
+    }
+    , 
+    "155":{
+        "name":"Janpath",
+        "line":["violet"]
+    }, 
+    "156":{
+        "name":"Central Secretariat",
+        "line":["violet","yellow"]
+    }, 
+    "157":{
+        "name":"Khan Market",
+        "line":["violet"]
+    }, 
+    "158":{
+        "name":"JLM Stadium",
+        "line":["violet"]
+    }, 
+    "159":{
+        "name":"Jangpura",
+        "line":["violet"]
+    }, 
+    "160":{
+        "name":"Lajpat Nagar",
+        "line":["violet","pink"]
+    }, 
+    "161":{
+        "name":"Moolchand",
+        "line":["violet"]
+    }, 
+    "162":{
+        "name":"Kialash Colony",
+        "line":["violet"]
+    }, 
+    "163":{
+        "name":"Nehru Palace",
+        "line":["violet"]
+    }, 
+    "164":{
+        "name":"Kalkaji Mandir",
+        "line":["violet","magenta"]
+    }, 
+    "165":{
+        "name":"Govindpuri",
+        "line":["violet"]
+    }, 
+    "166":{
+        "name":"Harkeshnagar Okhla",
+        "line":["violet"]
+    }, 
+    "167":{
+        "name":"Jasola Apollo",
+        "line":["violet"]
+    }, 
+    "168":{
+        "name":"Sarita Vihar",
+        "line":["violet"]
+    }, 
+    "169":{
+        "name":"Mohan Estate",
+        "line":["violet"]
+    }, 
+    "170":{
+        "name":"Tugalkabad",
+        "line":["violet"]
+    }, 
+    "171":{
+        "name":"Badarpur Border",
+        "line":["violet"]
+    }, 
+    "172":{
+        "name":"Sarai",
+        "line":["violet"]
+    }, 
+    "173":{
+        "name":"NHPC Chowk",
+        "line":["violet"]
+    }, 
+    "174":{
+        "name":"Mewala Maharajpur",
+        "line":["violet"]
+    }, 
+    "175":{
+        "name":"Sector 28",
+        "line":["violet"]
+    }, 
+    "176":{
+        "name":"Badkal Mor",
+        "line":["violet"]
+    }, 
+    "177":{
+        "name":"Old Faridabad",
+        "line":["violet"]
+    }, 
+    "178":{
+        "name":"Neelam Chowk Ajronda",
+        "line":["violet"]
+    }, 
+    "179":{
+        "name":"Bata Chowk",
+        "line":["violet"]
+    }, 
+    "180":{
+        "name":"Escorts Mujesar",
+        "line":["violet"]
+    }, 
+    "181":{
+        "name":"Sant Surdas (SIHI)",
+        "line":["violet"]
+    }, 
+    "182":{
+        "name":"Raja Nahar Singh Ballabgarh",
+        "line":["violet"]
+    }, 
+    "183":{
+        "name":"Majlis Park",
+        "line":["pink"]
+    }, 
+    "184":{
+        "name":"Azadpur",
+        "line":["pink","yellow"]
+    }, 
+    "185":{
+        "name":"Shalimar Bhagh",
+        "line":["pink"]
+    }, 
+    "186":{
+        "name":"Netaji Shubhash Palace",
+        "line":["pink","red"]
+    }, 
+    "187":{
+        "name":"Shakurpur",
+        "line":["pink"]
+    }, 
+    "188":{
+        "name":"Punjabi Bagh West ",
+        "line":["pink","green"]
+    }, 
+    "189":{
+        "name":"ESI Basaidarapur",
+        "line":["pink"]
+    }, 
+    "190":{
+        "name":"Rajouri Garden",
+        "line":["pink","blue"]
+    }, 
+    "191":{
+        "name":"Mayapuri",
+        "line":["pink"]
+    }, 
+    "192":{
+        "name":"Naraina vihar",
+        "line":["pink"]
+    }, 
+    "193":{
+        "name":"Delhi Cantt",
+        "line":["pink"]
+    }, 
+    "194":{
+        "name":"Durgabai Desmukh South Campus",
+        "line":["pink"]
+    }, 
+    "195":{
+        "name":"Sir M Vishweshwaraiah Moti Bagh",
+        "line":["pink"]
+    }, 
+    "196":{
+        "name":"Bhikaji Kama Palace",
+        "line":["pink"]
+    }, 
+    "197":{
+        "name":"Sarojini Nagar",
+        "line":["pink"]
+    }, 
+    "198":{
+        "name":"Delhi Haat INA",
+        "line":["pink","yellow"]
+    }, 
+    "199":{
+        "name":"South Extension",
+        "line":["pink"]
+    }, 
+    "200":{
+        "name":"Lajpat Nagar",
+        "line":["pink","violet"]
+    }, 
+    "201":{
+        "name":"Vinobapuri",
+        "line":["pink"]
+    }, 
+    "202":{
+        "name":"Ashram",
+        "line":["pink"]
+    }, 
+    "203":{
+        "name":"Sarai Kale Khan Nizamuddin",
+        "line":["pink"]
+    }, 
+    "204":{
+        "name":"Mayur Vihar Phase 1",
+        "line":["pink","blue"]
+    }, 
+    "205":{
+        "name":"Mayur Vihar Pkt 1 ",
+        "line":["pink"]
+    }, 
+    "206":{
+        "name":"Trilokpuri Sanjay Lake",
+        "line":["pink"]
+    }, 
+    "207":{
+        "name":"East Vinod Nagar Mayur Vihar II",
+        "line":["pink"]
+    }, 
+    "208":{
+        "name":"Mandawali West Vinod Nagar",
+        "line":["pink"]
+    }, 
+    "209":{
+        "name":"IP Extension",
+        "line":["pink"]
+    }, 
+    "210":{
+        "name":"Anand Vihar ISBT",
+        "line":["pink","blue"]
+    }, 
+    "211":{
+        "name":"Karkarduma",
+        "line":["pink","blue"]
+    }, 
+    "212":{
+        "name":"Karkarduma Court",
+        "line":["pink"]
+    }, 
+    "213":{
+        "name":"Krishna Nagar",
+        "line":["pink"]
+    }, 
+    "214":{
+        "name":"East Azad Nagar",
+        "line":["pink"]
+    }, 
+    "215":{
+        "name":"Welcome",
+        "line":["pink","red"]
+    }, 
+    "216":{
+        "name":"Jafrabad",
+        "line":["pink"]
+    }, 
+    "217":{
+        "name":"Maujpur Babarpur",
+        "line":["pink"]
+    }, 
+    "218":{
+        "name":"Gokulpurim Johri Enclave",
+        "line":["pink"]
+    }, 
+    "219":{
+        "name":"Shiv Vihar",
+        "line":["pink"]
+    }, 
+    "220":{
+        "name":"Janakpuri West",
+        "line":["magenta","blue"]
+    }, 
+    "221":{
+        "name":"Dabri Mor Janakpuri South",
+        "line":["magenta"]
+    }, 
+    "222":{
+        "name":"Dashrathpuri",
+        "line":["magenta"]
+    }, 
+    "223":{
+        "name":"Palm",
+        "line":["magenta"]
+    }, 
+    "224":{
+        "name":"Sadar Bazar Contanment",
+        "line":["magenta"]
+    }, 
+    "225":{
+        "name":"Terminal-1 IGI Airport",
+        "line":["magenta"]
+    }, 
+    "226":{
+        "name":"Shankar Vihar",
+        "line":["magenta"]
+    }, 
+    "227":{
+        "name":"Vasant Vihar",
+        "line":["magenta"]
+    }, 
+    "228":{
+        "name":"Munirka",
+        "line":["magenta"]
+    }, 
+    "229":{
+        "name":"RK Puram",
+        "line":["magenta"]
+    }, 
+    "230":{
+        "name":"IIT ",
+        "line":["magenta"]
+    }, 
+    "231":{
+        "name":"Hauz Khas",
+        "line":["magenta","yellow"]
+    }, 
+    "232":{
+        "name":"Panchsheel Park",
+        "line":["magenta"]
+    }, 
+    "233":{
+        "name":"Chirag Delhi",
+        "line":["magenta"]
+    }, 
+    "234":{
+        "name":"Greater Kailash",
+        "line":["magenta"]
+    }, 
+    "235":{
+        "name":"Nehru Enclave",
+        "line":["magenta"]
+    }
+    , 
+    "236":{
+        "name":"Kalkaji Mandir",
+        "line":["magenta","violet"]
+    }
+    , 
+    "237":{
+        "name":"Okhla NCIS",
+        "line":["magenta"]
+    }
+    , 
+    "238":{
+        "name":"Sukhdev Vihar",
+        "line":["magenta"]
+    }
+    , 
+    "239":{
+        "name":"Jamia Milia Islamia",
+        "line":["magenta"]
+    }
+    , 
+    "240":{
+        "name":"Okhla Vihar",
+        "line":["magenta"]
+    }
+    , 
+    "241":{
+        "name":"Jasola Vihar shaheen Bagh",
+        "line":["magenta"]
+    }
+    , 
+    "242":{
+        "name":"Kalindi Kunj",
+        "line":["magenta"]
+    }
+    , 
+    "243":{
+        "name":"Okhla Bird Sanctuary",
+        "line":["magenta"]
+    }
+    , 
+    "244":{
+        "name":"Botenical Garden",
+        "line":["magenta","blue"]
+    }
+    , 
+    "245":{
+        "name":"Dwarka",
+        "line":["grey","blue"]
+    }
+    , 
+    "246":{
+        "name":"Nangli",
+        "line":["grey"]
+    }
+    , 
+    "247":{
+        "name":"Najafgarh",
+        "line":["grey"]
+    }
+    , 
+    "248":{
+        "name":"Dhansa Bus Stand",
+        "line":["grey"]
+    }
+    , 
+    "249":{
+        "name":"New Delhi",
+        "line":["orange","yellow"]
+    }
+    , 
+    "250":{
+        "name":"Shivaji Stadium",
+        "line":["orange"]
+    }
+    , 
+    "251":{
+        "name":"Dhaula Kuan",
+        "line":["orange"]
+    }
+    , 
+    "252":{
+        "name":"Delhi Aerocity",
+        "line":["orange"]
+    }
+    , 
+    "253":{
+        "name":" Indira Gandhi International Airport",
+        "line":["orange"]
+    }
+    , 
+    "254":{
+        "name":"Dwarka sec 21",
+        "line":["orange","blue"]
+    }
+    , 
+    "255":{
+        "name":"Noida sec 52",
+        "line":["aqua","blue"]
+    }
+    
+    , 
+    "256":{
+        "name":"Noida Sec 51",
+        "line":["aqua"]
+    }
+    , 
+    "257":{
+        "name":"Noida Sec 50",
+        "line":["aqua"]
+    }
+    , 
+    "258":{
+        "name":"Noida Sec 76",
+        "line":["aqua"]
+    }
+    , 
+    "259":{
+        "name":"Noida Sec 101",
+        "line":["aqua"]
+    }
+    , 
+    "260":{
+        "name":"Noida Sec 81",
+        "line":["aqua"]
+    }
+    , 
+    "261":{
+        "name":"NSEZ Noida",
+        "line":["aqua"]
+    }
+    , 
+    "262":{
+        "name":"Noida Sec 83",
+        "line":["aqua"]
+    }
+    , 
+    "263":{
+        "name":"Noida Sec 137",
+        "line":["aqua"]
+    }
+    , 
+    "264":{
+        "name":"Noida Sec 142",
+        "line":["aqua"]
+    }
+}

@@ -1,0 +1,157 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <title>Document</title>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">metroinfo.com</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+  
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Lines
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a style="color: blue;" class="dropdown-item" href="/lines?color=blue">Blue</a></li>
+              <li> <a style="color: green;" class="dropdown-item" href="/lines?color=green">Green</a></li>
+              <li> <a style="color: red;" class="dropdown-item" href="/lines?color=red">Red</a></li>
+              <li> <a style="color: yellow;" class="dropdown-item" href="/lines?color=yellow">Yellow</a></li>
+              <li><a style="color: pink;" class="dropdown-item" href="/lines?color=pink">Pink</a></li>
+              <li> <a style="color: grey;" class="dropdown-item" href="/lines?color=grey">Grey</a></li>
+              <li> <a style="color: magenta;" class="dropdown-item" href="/lines?color=magenta">Magenta</a></li>
+              <li> <a style="color: aqua;" class="dropdown-item" href="/lines?color=aqua">Aqua</a></li>
+              <li> <a style="color: violet;" class="dropdown-item" href="/lines?color=violet">Violet</a></li>
+              <li><a style="color: orange;" class="dropdown-item" href="/lines?color=orange">Orange</a></li>
+  
+            </ul>
+  
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+  
+      </div>
+    </div>
+  </nav>
+
+
+
+ 
+  <h3>Find the shortest route for your journey</h3>
+
+  <br>
+  <div id="search_box" style="width:300px ;border-radius:12px;padding:5px;margin-left: auto;margin-right: auto;background-color: aliceblue;">
+    <form action="/addedge" method="post">
+      <b><label for="from"> From</label></b>
+      <select style="width: 250px;" name="from" id="">
+        <% for (const item in station) { %>
+          <option value="<%- item %>">
+            <%- station[item].name %>
+          </option>
+
+          <%- station[item].name %>
+            <% } %>
+      </select>
+      <br><br>
+      <b><label for="to">To </label></b>
+      <br>
+      <select style="width: 250px;" name="to" id="">
+        <% for (const item in station) { %>
+          <option value="<%- item %>">
+            <%- station[item].name %>
+          </option>
+
+          <%- station[item].name %>
+            <% } %>
+      </select>
+      <!-- <input type="text" name="from" required placeholder="From"><br><br>
+            <input type="text" name="to" required placeholder="To"> -->
+      <br>
+      <br>
+      <button class="btn btn-sm btn-success" type="submit"> Search</button>
+    </form>
+  </div>
+  <br><br>
+  <div id="header" class="d-flex justify-content-around" style="width: fit-content;padding:5px;margin-left:auto;margin-right:auto;background-color: aliceblue;"> 
+  <% let l = ans2.length 
+  if(l>0){ 
+  %>
+ <p><b><%- station[ans2[0]].name %></b></p>  <i style='font-size:18px;margin: 5px;color: green;' class='fas'>&#xf0a9;</i><p><b><%- station[ans2[l-1]].name %></b></p> 
+ <% } %>
+</div>
+ <br><br>
+  <div id="showroute" style="width: 300px; margin-left:auto;margin-right:auto">
+    <% var b='' 
+    for(const a in ans2){ %>
+      <div style="color:white;opacity: 0.8
+          ; background-color:<%- station[ans2[a]].line[0] %>">
+        <% 
+      
+        if(station[ans2[a]].line[0] ==b || a == 0) { %>
+          <p>
+            <%- station[ans2[a]].name %> (<%- ans2[a] %>)
+          </p>
+          <% if(a !=ans2.length-1) { %>
+            <i class='fas fa-arrow-down' style='font-size:13px;color:white'></i>
+            <% } 
+           
+             } 
+             
+            else if (station[ans2[a]].line[0] !=b && a!=0){ %>
+              <h6 style="background-color: white;">Change here</h6>
+              <% }
+            
+             b=station[ans2[a]].line[0]
+              %>
+            </div>
+      <% } %>
+  </div>
+  <br><br>
+
+
+</body>
+
+</html>
+<style>
+  body {
+    text-align: center;
+  }
+  #search_box{
+    box-shadow: 0px 3px 13px 0px rgba(0,0,0,0.6);
+-webkit-box-shadow: 0px 3px 13px 0px rgba(0,0,0,0.6);
+-moz-box-shadow: 0px 3px 13px 0px rgba(0,0,0,0.6);
+  }
+  #header{
+    box-shadow: 0px 3px 13px 0px rgba(0,0,0,0.6);
+-webkit-box-shadow: 0px 3px 13px 0px rgba(0,0,0,0.6);
+-moz-box-shadow: 0px 3px 13px 0px rgba(0,0,0,0.6);
+border-radius: 12px;
+  }
+</style>
