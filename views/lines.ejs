@@ -14,7 +14,7 @@
 
 
 
-    <title>Document</title>
+    <title>Delhi metro <%- color %> line</title>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -80,7 +80,7 @@
                 </div>
                 <div style="background-color:<%- color %> ;" class="station_name p-2 flex-fill bd-highlight">
                 
-                  <% if(color == 'blue'){ %> 
+                  <% if(color == 'blue' || color == 'green' || color == 'red'){ %> 
                     <b style="color:white ;">  <%-  station[item].name %> </b>
                 <%  }
                 else{ %>

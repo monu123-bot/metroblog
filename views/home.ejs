@@ -15,7 +15,7 @@
   <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
-  <title>Document</title>
+  <title>Search Route</title>
 
 </head>
 
@@ -122,7 +122,7 @@ arrow_circle_right
         <% for (const node in ans3[lines]) { %>
           <div style="background-color:<%- station[ans3[lines][node]].line[0] %> ;" class="station_name">
                 
-            <% if(station[ans3[lines][node]].line[0] == 'blue' || station[ans3[lines][node]].line[0] == 'red'){
+            <% if(station[ans3[lines][node]].line[0] == 'blue' || station[ans3[lines][node]].line[0] == 'red' || station[ans3[lines][node]].line[0] == 'green' ){
               i = i+1
               %> 
               <b style="color:white ;">  <%-  station[ans3[lines][node]].name %> </b>
