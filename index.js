@@ -243,7 +243,7 @@ app.post('/addedge',(req,res)=>{
     fs.readFile('./station.json','utf-8',(err,stations)=>{
       const station = JSON.parse(stations)
       let ans2 = ans1[0]
-      
+  
       res.render('home',{ans2,station})
     ans2 = []
     ans1 = []

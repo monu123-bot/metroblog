@@ -103,7 +103,7 @@
   <% let l = ans2.length 
   if(l>0){ 
   %>
- <p><b><%- station[ans2[0]].name %></b></p>  <i style='font-size:18px;margin: 5px;color: green;' class='fas'>&#xf0a9;</i><p><b><%- station[ans2[l-1]].name %></b></p> 
+ <p><b><%- station[ans2[0]].name %></b></p>  <i style='font-size:18px;margin: 5px;color: green;' class='fa'>&#xf0a9;</i><p><b><%- station[ans2[l-1]].name %></b></p> 
  <% } %>
 </div>
  <br><br>
@@ -113,26 +113,28 @@
       <div style="color:white;opacity: 0.8
           ; background-color:<%- station[ans2[a]].line[0] %>">
         <% 
-      
         if(station[ans2[a]].line[0] ==b || a == 0) { %>
           <p>
             <%- station[ans2[a]].name %> 
           </p>
           <% if(a !=ans2.length-1) { %>
-            <i class='fas fa-arrow-down' style='font-size:13px;color:white'></i>
+            <i class='fa fa-arrow-down' style='font-size:13px;color:white'></i>
             <% } 
-           
              } 
-             
             else if (station[ans2[a]].line[0] !=b && a!=0){ %>
+             
               <h6 style="background-color: white;">Change here</h6>
-              <% }
-            
+              <%- station[ans2[a]].name %> <br>
+              <% if(a !=ans2.length-1) { %>
+              <i class='fa fa-arrow-down' style='font-size:13px;color:white'></i>
+              <% } }
              b=station[ans2[a]].line[0]
               %>
             </div>
       <% } %>
   </div>
+  <br><br>
+  <div id="thanks" style="border-radius:12px; ">Thankyou</div>
   <br><br>
 
 
@@ -153,5 +155,15 @@
 -webkit-box-shadow: 0px 3px 13px 0px rgba(0,0,0,0.6);
 -moz-box-shadow: 0px 3px 13px 0px rgba(0,0,0,0.6);
 border-radius: 12px;
+  }
+  #thanks{
+    box-shadow: 0px 3px 13px 0px rgba(0,0,0,0.6);
+-webkit-box-shadow: 0px 3px 13px 0px rgba(0,0,0,0.6);
+-moz-box-shadow: 0px 3px 13px 0px rgba(0,0,0,0.6);
+border-radius: 12px;
+width: fit-content;
+padding: 10px;
+margin-left: auto;
+margin-right: auto;
   }
 </style>
