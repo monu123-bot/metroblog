@@ -205,8 +205,8 @@ app.get('/',(req,res)=>{
   fs.readFile('./station.json','utf-8',(err,arr)=>{
     const station = JSON.parse(arr)
   
-    let ans2 = []
-  res.render('home',{ans2,station})
+    let ans3 = []
+  res.render('home',{ans3,station})
   })
 
   
@@ -243,8 +243,37 @@ app.post('/addedge',(req,res)=>{
     fs.readFile('./station.json','utf-8',(err,stations)=>{
       const station = JSON.parse(stations)
       let ans2 = ans1[0]
-  
-      res.render('home',{ans2,station})
+      let ans3 = []
+      let ans4 = []
+      console.log(ans2)
+      for(i=0;i<ans2.length;i++){
+        if(i<ans2.length-1){ 
+        if(ans2[i] == ans2[i+1]+1 || ans2[i] == ans2[i+1]-1){
+          ans4.push(ans2[i])
+        }
+        else{
+          ans4.push(ans2[i])
+          ans3.push(ans4)
+          ans4 = []
+        } }
+        else{
+          if(ans2[i] == ans2[i-1]+1 || ans2[i] == ans2[i-1]-1){
+            ans4.push(ans2[i])
+          }
+          else{
+            ans4.push(ans2[i])
+            ans3.push(ans4)
+            ans4 = []
+          }
+
+        }
+        if(ans4.length>0 && i == ans2.length-1){
+          ans3.push(ans4)
+          ans4 = []
+        }
+      }
+    let l = ans2.length
+      res.render('home',{ans3,station,l})
     ans2 = []
     ans1 = []
     })

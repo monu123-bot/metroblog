@@ -102,46 +102,57 @@
   </div>
   <br><br>
   <div id="header" class="d-flex justify-content-around" style="width: fit-content;padding:5px;margin-left:auto;margin-right:auto;background-color: aliceblue;"> 
-  <% let l = ans2.length 
-  if(l>0){ 
+  <% let l1 = ans3.length
+      let i  = 0
+
+  if(l1>0){ 
+    let l2 = ans3[l1-1].length 
   %>
- <p><b><%- station[ans2[0]].name %></b></p> <span class="material-symbols-outlined">
+ <p><b><%- station[ans3[0][0]].name %></b></p> <span class="material-symbols-outlined">
 arrow_circle_right
-</span><p><b><%- station[ans2[l-1]].name %></b></p> 
+</span><p><b><%- station[ans3[l1-1][l2-1]].name %></b></p> 
  <% } %>
 </div>
+
+  
  <br><br>
   <div id="showroute" style="width: 300px; margin-left:auto;margin-right:auto">
-    <% var b='' 
-    for(const a in ans2){ %>
-      <div style="color:white;opacity: 0.8
-          ; background-color:<%- station[ans2[a]].line[0] %>">
-        <% 
-        if(station[ans2[a]].line[0] ==b || a == 0) { %>
-          <p>
-            <%- station[ans2[a]].name %> 
-          </p>
-          <% if(a !=ans2.length-1) { %>
-            <span style="size: 12px;" class="material-symbols-outlined">
-              arrow_downward
-              </span></i>
-            <% } 
-             } 
-            else if (station[ans2[a]].line[0] !=b && a!=0){ %>
-             
-              <h6 style="background-color: white;">Change here</h6>
-              <p>
-              <%- station[ans2[a]].name %> <br>
-
-              <% if(a !=ans2.length-1) { %>
-                <span style="size: 12px;" class="material-symbols-outlined">
-                  arrow_downward
-                  </span>></p>
-              <% } }
-             b=station[ans2[a]].line[0]
-              %>
-            </div>
-      <% } %>
+    <% for(const lines in ans3){ %>
+       
+        <% for (const node in ans3[lines]) { %>
+          <div style="background-color:<%- station[ans3[lines][node]].line[0] %> ;" class="station_name">
+                
+            <% if(station[ans3[lines][node]].line[0] == 'blue' || station[ans3[lines][node]].line[0] == 'red'){
+              i = i+1
+              %> 
+              <b style="color:white ;">  <%-  station[ans3[lines][node]].name %> </b>
+          <%  }
+          else{ 
+            i = i+1
+            %>
+            <b>  <%-  station[ans3[lines][node]].name %> </b>
+         <% } %>
+            
+          
+          </div>
+          
+          <!-- <div style="border-bottom-left-radius: 50%;border-bottom-right-radius: 50%; width: 10px;height: 20px;margin-left: auto;margin-right: auto; background-color:<%- station[ans3[lines][node]].line[0] %> ;"></div> -->
+          <% if(i!=l){ %>
+            
+          
+          <span style="size: 12px;color:<%- station[ans3[lines][node]].line[0] %> " class="material-symbols-outlined">
+            arrow_downward
+            </span>
+            <% } %>
+          <%  } %>
+       <br>
+       <div>
+        <% if(i!=l){ %>
+         Now you are at  <%-  station[ans3[lines][ans3[lines].length-1]].name %>
+       <% } %>
+       </div>
+       <br>
+   <% } %>
   </div>
   <br><br>
   <div id="thanks" style="border-radius:12px; ">Thankyou</div>
@@ -152,6 +163,9 @@ arrow_circle_right
 
 </html>
 <style>
+  .station_name{
+   border-radius: 12px;
+  }
   body {
     text-align: center;
   }

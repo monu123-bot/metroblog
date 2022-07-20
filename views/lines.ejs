@@ -79,7 +79,14 @@
           <% } %>
                 </div>
                 <div style="background-color:<%- color %> ;" class="station_name p-2 flex-fill bd-highlight">
-                 <b><%-  station[item].name %></b> 
+                
+                  <% if(color == 'blue'){ %> 
+                    <b style="color:white ;">  <%-  station[item].name %> </b>
+                <%  }
+                else{ %>
+                  <b>  <%-  station[item].name %> </b>
+               <% } %>
+                  
                 
                 </div>
                 <div class="right_lines p-2 flex-fill bd-highlight">
