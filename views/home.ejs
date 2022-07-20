@@ -13,6 +13,8 @@
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
     crossorigin="anonymous"></script>
   <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
   <title>Document</title>
 
 </head>
@@ -103,7 +105,9 @@
   <% let l = ans2.length 
   if(l>0){ 
   %>
- <p><b><%- station[ans2[0]].name %></b></p>  <i style='font-size:18px;margin: 5px;color: green;' class='fa'>&#xf0a9;</i><p><b><%- station[ans2[l-1]].name %></b></p> 
+ <p><b><%- station[ans2[0]].name %></b></p> <span class="material-symbols-outlined">
+arrow_circle_right
+</span><p><b><%- station[ans2[l-1]].name %></b></p> 
  <% } %>
 </div>
  <br><br>
@@ -118,15 +122,21 @@
             <%- station[ans2[a]].name %> 
           </p>
           <% if(a !=ans2.length-1) { %>
-            <i class='fa fa-arrow-down' style='font-size:13px;color:white'></i>
+            <span style="size: 12px;" class="material-symbols-outlined">
+              arrow_downward
+              </span></i>
             <% } 
              } 
             else if (station[ans2[a]].line[0] !=b && a!=0){ %>
              
               <h6 style="background-color: white;">Change here</h6>
+              <p>
               <%- station[ans2[a]].name %> <br>
+
               <% if(a !=ans2.length-1) { %>
-              <i class='fa fa-arrow-down' style='font-size:13px;color:white'></i>
+                <span style="size: 12px;" class="material-symbols-outlined">
+                  arrow_downward
+                  </span>></p>
               <% } }
              b=station[ans2[a]].line[0]
               %>
