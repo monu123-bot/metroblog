@@ -31,8 +31,6 @@
           <li class="nav-item active">
             <a class="nav-link" href="/">Home</a>
           </li>
-          
-  
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
               aria-expanded="false">
@@ -49,21 +47,12 @@
               <li> <a style="color: aqua;" class="dropdown-item" href="/lines?color=aqua">Aqua</a></li>
               <li> <a style="color: violet;" class="dropdown-item" href="/lines?color=violet">Violet</a></li>
               <li><a style="color: orange;" class="dropdown-item" href="/lines?color=orange">Orange</a></li>
-  
             </ul>
-  
-        
         </ul>
-  
       </div>
     </div>
   </nav>
-
-
-
- 
   <h3>Find the shortest route for your journey</h3>
-
   <br>
   <div id="search_box" style="width:300px ;border-radius:12px;padding:5px;margin-left: auto;margin-right: auto;background-color: aliceblue;">
     <form action="/addedge" method="post">
@@ -85,7 +74,6 @@
           <option value="<%- item %>">
             <%- station[item].name %>
           </option>
-
           <%- station[item].name %>
             <% } %>
       </select>
@@ -100,7 +88,6 @@
   <div id="header" class="d-flex justify-content-around" style="width: fit-content;padding:5px;margin-left:auto;margin-right:auto;background-color: aliceblue;"> 
   <% let l1 = ans3.length
       let i  = 0
-
   if(l1>0){ 
     let l2 = ans3[l1-1].length 
   %>
@@ -109,12 +96,30 @@ arrow_circle_right
 </span><p><b><%- station[ans3[l1-1][l2-1]].name %></b></p> 
  <% } %>
 </div>
-
-  
- <br><br>
+ <br>
+ <div>
+  <% if(l <= 2 ){ %>
+       <b>Fare :</b><i>10rs</i>
+ <% }
+  else if (l <= 5){  %>
+    <b>Fare :</b><i>20rs</i>
+ <% }
+ else if(l <=12){ %>
+  <b>Fare :</b><i>30rs</i>
+<% }
+else if(l <= 21){ %>
+  <b>Fare :</b><i>40rs</i>
+<% }
+else if(l<=32){ %>
+  <b>Fare :</b><i>50rs</i>
+<% }
+else{ %>
+  <b>Fare :</b><i>60rs</i>
+<% } %>
+ </div>
+ <br>
   <div id="showroute" style="width: 300px; margin-left:auto;margin-right:auto">
     <% for(const lines in ans3){ %>
-       
         <% for (const node in ans3[lines]) { %>
           <div style="background-color:<%- station[ans3[lines][node]].line[0] %> ;" class="station_name">
                 
@@ -128,14 +133,9 @@ arrow_circle_right
             %>
             <b>  <%-  station[ans3[lines][node]].name %> </b>
          <% } %>
-            
-          
           </div>
-          
           <!-- <div style="border-bottom-left-radius: 50%;border-bottom-right-radius: 50%; width: 10px;height: 20px;margin-left: auto;margin-right: auto; background-color:<%- station[ans3[lines][node]].line[0] %> ;"></div> -->
           <% if(i!=l){ %>
-            
-          
           <span style="size: 12px;color:<%- station[ans3[lines][node]].line[0] %> " class="material-symbols-outlined">
             arrow_downward
             </span>
@@ -153,10 +153,7 @@ arrow_circle_right
   <br><br>
   <div id="thanks" style="border-radius:12px; ">Wishing you a happy journey</div>
   <br><br>
-
-
 </body>
-
 </html>
 <style>
   .station_name{
