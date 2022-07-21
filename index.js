@@ -273,19 +273,14 @@ app.post('/addedge',(req,res)=>{
         }
       }
     let l = ans2.length
+    console.log(ans3)
       res.render('home',{ans3,station,l})
     ans2 = []
     ans1 = []
     })
   })
-    
-   
-    
-    
   });
     ans = []
-    
-    
   })
   
   app.get('/lines',(req,res)=>{

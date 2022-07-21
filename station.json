@@ -375,11 +375,11 @@
         "line":["blue"]
     }  , 
     "93":{
-        "name":"Jhandewalan",
+        "name":"RK Ashram Marg",
         "line":["blue"]
     }  , 
     "94":{
-        "name":"RK Ashram Marg",
+        "name":"Jhandewalan",
         "line":["blue"]
     }  , 
     "95":{
@@ -395,7 +395,7 @@
         "line":["blue","violet"]
     }  , 
     "98":{
-        "name":"Supreme Court",
+        "name":"Pragati Maidan (supreme court)",
         "line":["blue"]
     }  , 
     "99":{
@@ -519,7 +519,7 @@
         "line":["green","red"]
     } , 
     "129":{
-        "name":"Punjabi Bagh",
+        "name":"Punjabi Bagh East",
         "line":["green"]
     } , 
     "130":{
