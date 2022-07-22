@@ -206,7 +206,9 @@ app.get('/',(req,res)=>{
     const station = JSON.parse(arr)
   
     let ans3 = []
-  res.render('home',{ans3,station})
+    let ans2  = []
+    l = 0
+  res.render('home',{ans3,station,l,ans2})
   })
 
   
@@ -214,6 +216,8 @@ app.get('/',(req,res)=>{
     
     
 })
+
+
 app.post('/addedge',(req,res)=>{
   
   var from = req.body.from
@@ -232,7 +236,7 @@ app.post('/addedge',(req,res)=>{
       
     }
     
-    print_paths(data, 265, parseInt(from),parseInt(to))
+    print_paths(data, 278, parseInt(from),parseInt(to))
     let ans1 = []
     
     for (i=0;i<ans.length;i++){
@@ -273,8 +277,8 @@ app.post('/addedge',(req,res)=>{
         }
       }
     let l = ans2.length
-    console.log(ans3)
-      res.render('home',{ans3,station,l})
+ 
+      res.render('home',{ans3,station,l,ans2})
     ans2 = []
     ans1 = []
     })
