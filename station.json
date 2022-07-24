@@ -633,17 +633,17 @@
     "125":{
         "name":"Kirti Nagar",
         "line":["green","blue"],
-        "dist":3.5
+        "dist":-3
     } , 
     "126":{
         "name":"Satguru Ram Singh Marg",
         "line":["green"],
-        "dist":2.5
+        "dist":-2
     } , 
     "127":{
         "name":"Ashok Park Main",
         "line":["green"],
-        "dist":2.3
+        "dist":0
     } , 
     "128":{
         "name":"Inderlok",

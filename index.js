@@ -208,7 +208,9 @@ app.get('/',(req,res)=>{
     let ans3 = []
     let ans2  = []
     l = 0
-  res.render('home',{ans3,station,l,ans2})
+    to = 0
+    from = 0
+  res.render('home',{ans3,station,l,ans2,to,from})
   })
 
   
@@ -218,10 +220,10 @@ app.get('/',(req,res)=>{
 })
 
 
-app.post('/addedge',(req,res)=>{
+app.get('/findroute',(req,res)=>{
   
-  var from = req.body.from
-  var to = req.body.to
+  var from = req.query.from
+  var to = req.query.to
   fs.readFile('./graph.json','utf-8',(err,arr)=>{
     const data = JSON.parse(arr)
     fs.readFile('./station.json','utf-8',(err,stations1)=>{
@@ -278,7 +280,7 @@ app.post('/addedge',(req,res)=>{
       }
     let l = ans2.length
  
-      res.render('home',{ans3,station,l,ans2})
+      res.render('home',{ans3,station,l,ans2,to,from})
     ans2 = []
     ans1 = []
     })
