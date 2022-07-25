@@ -225,20 +225,12 @@
 
   <br>
   <% if(from < 256 && to > 256){ %>
-    
- 
-
    <p><b>Attention:</b> you are moving from delhi metro to noida metro, you have to exit from Noida sector 52 and walk towards  Noida sector 51 which is arround 300m a head. And Charges for delhi metro are individual from noida metro.</p>
   <% }
   else if(from > 256 && to < 256){ %>
-   
-
     <p><b>Attention:</b> you are moving from noida metro to delhi metro, you have to exit from Noida sector 51 and walk towards Noida sector 52 which is arround 300m a head. And Charges for delhi metro are individual from noida metro.</p>
- 
   <% }
   %>
-  
-
    </div>
  <br>
  <br>
@@ -263,18 +255,154 @@
             <% if(j!=l){ 
               
               %>
-             
           <span style="size: 12px;color:<%- station[ans3[lines][node]].line[0] %> " class="material-symbols-outlined">
             arrow_downward
             </span>
             <% } %>
           <%  } %>
-       <br>
-
+       <br><br>
+        <div>
         <% if(j!=l ){
-          if(station[ans2[j]].line[0] != station[ans2[j-1]].line[0]){ 
-          %>
-         Now you are at  <%-  station[ans3[lines][ans3[lines].length-1]].name %>, move towards <%-  station[ans3[lines][ans3[lines].length-1]].line[1] %> line
+          if(station[ans2[j]].line[0] != station[ans2[j-1]].line[0]){  
+
+            if(station[ans3[lines][ans3[lines].length-1]].line[0] == 'blue'){ %>
+              <% if (ans3[lines][ans3[lines].length-2]-ans3[lines][ans3[lines].length-1] < 0){ %> 
+                <%-  station[ans3[lines][ans3[lines].length-1]].blue.up  %>
+                <% }
+                else{ %>
+                  <%-  station[ans3[lines][ans3[lines].length-1]].blue.down  %>
+               <% } %>
+         <%   }
+            else if (station[ans3[lines][ans3[lines].length-1]].line[0] == 'green'){ %>
+              <% if (ans3[lines][ans3[lines].length-2]-ans3[lines][ans3[lines].length-1] < 0){ %> 
+              <%-  station[ans3[lines][ans3[lines].length-1]].green.up  %>
+              <% }
+              else{ %>
+                <%-  station[ans3[lines][ans3[lines].length-1]].green.down  %>
+             <% } %>
+       <%     }
+            else if (station[ans3[lines][ans3[lines].length-1]].line[0] == 'red'){%>
+              <% if (ans3[lines][ans3[lines].length-2]-ans3[lines][ans3[lines].length-1] < 0){ %> 
+                <%-  station[ans3[lines][ans3[lines].length-1]].red.up  %>
+                <% }
+                else{ %>
+                  <%-  station[ans3[lines][ans3[lines].length-1]].red.down  %>
+               <% } %>
+         <%   }
+            else if (station[ans3[lines][ans3[lines].length-1]].line[0] == 'yellow'){%>
+              <% if (ans3[lines][ans3[lines].length-2]-ans3[lines][ans3[lines].length-1] < 0){ %> 
+                <%-  station[ans3[lines][ans3[lines].length-1]].yellow.up  %>
+                <% }
+                else{ %>
+                  <%-  station[ans3[lines][ans3[lines].length-1]].yellow.down  %>
+               <% } %>
+          <%  }
+            else if (station[ans3[lines][ans3[lines].length-1]].line[0] == 'orange'){%>
+              <% if (ans3[lines][ans3[lines].length-2]-ans3[lines][ans3[lines].length-1] < 0){ %> 
+                <%-  station[ans3[lines][ans3[lines].length-1]].orange.up  %>
+                <% }
+                else{ %>
+                  <%-  station[ans3[lines][ans3[lines].length-1]].orange.down  %>
+               <% } %>
+          <%  }
+            else if (station[ans3[lines][ans3[lines].length-1]].line[0] == 'purple'){%>
+              <% if (ans3[lines][ans3[lines].length-2]-ans3[lines][ans3[lines].length-1] < 0){ %> 
+                <%-  station[ans3[lines][ans3[lines].length-1]].purple.up  %>
+                <% }
+                else{ %>
+                  <%-  station[ans3[lines][ans3[lines].length-1]].purple.down  %>
+               <% } %>
+          <%  }
+            else if (station[ans3[lines][ans3[lines].length-1]].line[0] == 'grey'){%>
+              <% if (ans3[lines][ans3[lines].length-2]-ans3[lines][ans3[lines].length-1] < 0){ %> 
+                <%-  station[ans3[lines][ans3[lines].length-1]].grey.up  %>
+                <% }
+                else{ %>
+                  <%-  station[ans3[lines][ans3[lines].length-1]].grey.down  %>
+               <% } %>
+          <%  }
+            else if (station[ans3[lines][ans3[lines].length-1]].line[0] == 'violet'){%>
+              <% if (ans3[lines][ans3[lines].length-2]-ans3[lines][ans3[lines].length-1] < 0){ %> 
+                <%-  station[ans3[lines][ans3[lines].length-1]].violet.up  %>
+                <% }
+                else{ %>
+                  <%-  station[ans3[lines][ans3[lines].length-1]].violet.down  %>
+               <% } %>
+           <% }
+           else if (station[ans3[lines][ans3[lines].length-1]].line[0] == 'magenta'){%>
+            <% if (ans3[lines][ans3[lines].length-2]-ans3[lines][ans3[lines].length-1] < 0){ %> 
+              <%-  station[ans3[lines][ans3[lines].length-1]].magenta.up  %>
+              <% }
+              else{ %>
+                <%-  station[ans3[lines][ans3[lines].length-1]].magenta.down  %>
+             <% } %>
+          <% }
+           else if (station[ans3[lines][ans3[lines].length-1]].line[0] == 'aqua'){%>
+            <% if (ans3[lines][ans3[lines].length-2]-ans3[lines][ans3[lines].length-1] < 0){ %> 
+              <%-  station[ans3[lines][ans3[lines].length-1]].aqua.up  %>
+              <% }
+              else{ %>
+                <%-  station[ans3[lines][ans3[lines].length-1]].aqua.down  %>
+             <% } %>
+      <%     }
+    
+    else if (station[ans3[lines][ans3[lines].length-1]].line[0] == 'pink'){%>
+      <% if (ans3[lines][ans3[lines].length-2]-ans3[lines][ans3[lines].length-1] < 0){ %> 
+        <%-  station[ans3[lines][ans3[lines].length-1]].pink.up  %>
+        <% }
+        else{ %>
+          <%-  station[ans3[lines][ans3[lines].length-1]].pink.down  %>
+       <% } %>
+<%     } %>
+<span class="material-symbols-outlined">
+  follow_the_signs
+  </span>
+<%
+if(station[ans3[lines][ans3[lines].length-1]].line[1] == 'blue'){ %>
+  <%-  station[ans3[lines][ans3[lines].length-1]].blue.up  %>
+<%   }
+else if (station[ans3[lines][ans3[lines].length-1]].line[1] == 'green'){ %>
+  <%-  station[ans3[lines][ans3[lines].length-1]].green.up  %>
+<%     }
+else if (station[ans3[lines][ans3[lines].length-1]].line[1] == 'red'){%>
+  <%-  station[ans3[lines][ans3[lines].length-1]].red.up  %>
+<%   }
+else if (station[ans3[lines][ans3[lines].length-1]].line[1] == 'yellow'){%>
+  <%-  station[ans3[lines][ans3[lines].length-1]].yellow.up  %>
+<%  }
+else if (station[ans3[lines][ans3[lines].length-1]].line[1] == 'orange'){%>
+  <%-  station[ans3[lines][ans3[lines].length-1]].orange.up  %>
+<%  }
+else if (station[ans3[lines][ans3[lines].length-1]].line[1] == 'purple'){%>
+  <%-  station[ans3[lines][ans3[lines].length-1]].purple.up  %>
+<%  }
+else if (station[ans3[lines][ans3[lines].length-1]].line[1] == 'grey'){%>
+  <%-  station[ans3[lines][ans3[lines].length-1]].grey.up  %>
+<%  }
+else if (station[ans3[lines][ans3[lines].length-1]].line[1] == 'violet'){%>
+  <%-  station[ans3[lines][ans3[lines].length-1]].violet.up  %>
+<% }
+else if (station[ans3[lines][ans3[lines].length-1]].line[1] == 'magenta'){%>
+<%-  station[ans3[lines][ans3[lines].length-1]].magenta.up  %>
+<% }
+else if (station[ans3[lines][ans3[lines].length-1]].line[1] == 'aqua'){%>
+<%-  station[ans3[lines][ans3[lines].length-1]].aqua.up  %>
+<%     }
+
+else if (station[ans3[lines][ans3[lines].length-1]].line[1] == 'pink'){%>
+<%-  station[ans3[lines][ans3[lines].length-1]].pink.up  %>
+<%     } 
+
+
+
+
+
+    %>
+  </div>
+
+
+          <br>
+        
        <% }} %>
        <% } %>
        <br>

@@ -279,7 +279,7 @@ app.get('/findroute',(req,res)=>{
         }
       }
     let l = ans2.length
- 
+    console.log(station[3].red.up)  
       res.render('home',{ans3,station,l,ans2,to,from})
     ans2 = []
     ans1 = []
@@ -300,7 +300,7 @@ app.get('/findroute',(req,res)=>{
 
 
   })
-  
+
 app.listen(port, () => {
     console.log(`app is running on port : ${port}`);
 });
