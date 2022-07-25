@@ -236,7 +236,7 @@
  <br>
   <div id="showroute" style="width: 300px; margin-left:auto;margin-right:auto">
     <%
-    
+     
      for(const lines in ans3){ %>
         <% for (const node in ans3[lines]) { %>
           <div style="background-color:<%- station[ans3[lines][node]].line[0] %> ;" class="station_name">
@@ -358,6 +358,7 @@
   follow_the_signs
   </span>
 <%
+
 if(station[ans3[lines][ans3[lines].length-1]].line[1] == 'blue'){ %>
   <%-  station[ans3[lines][ans3[lines].length-1]].blue.up  %>
 <%   }
