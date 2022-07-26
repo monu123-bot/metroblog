@@ -215,7 +215,6 @@
         <tr>
           <th scope="row">Station</th>
           <td><i><%- l-l1+1+1 %></i></td>
-          
         </tr>
       </tbody>
     </table>
@@ -236,9 +235,98 @@
  <br>
   <div id="showroute" style="width: 300px; margin-left:auto;margin-right:auto">
     <%
-     
+     if(l>1){
+
+      let m = 0
+      while(1){
+        if((ans2[m] == ans2[m+1]+1) || (ans2[m] == ans2[m+1]-1)){
+            
+       
+       break
+        }
+        m+=1
+       
+    } %>
+      <span class="material-symbols-outlined">
+        follow_the_signs
+        </span>
+         <%  if( station[ans2[m]].dist > station[ans2[m+1]].dist){ %>
+                <%  if(station[ans2[m]].line[0] == 'blue'){ %>
+                      <%-  station[ans2[m]].blue.down  %>
+                <%   }
+                else if (station[ans2[m]].line[0] == 'green'){ %>
+              <%-  station[ans2[m]].green.down  %>
+               <%     }
+               else if (station[ans2[m]].line[0] == 'red'){%>
+                 <%-  station[ans2[m]].red.down  %>
+               <%   }
+                else if (station[ans2[m]].line[0] == 'yellow'){%>
+               <%-  station[ans2[m]].yellow.down  %>
+              <%  }
+              else if (station[ans2[m]].line[0] == 'orange'){%>
+                   <%-  station[ans2[m]].orange.down  %>
+              <%  }
+              else if (station[ans2[m]].line[0] == 'purple'){%>
+              <%-  station[ans2[m]].purple.down  %>
+              <%  }
+                 else if (station[ans2[m]].line[0] == 'grey'){%>
+                  <%-  station[ans2[m]].grey.down  %>
+              <%  }
+               else if (station[ans2[m]].line[0] == 'violet'){%>
+               <%-  station[ans2[m]].violet.down  %>
+               <% }
+                else if (station[ans2[m]].line[0] == 'magenta'){%>
+                 <%-  station[ans2[m]].magenta.down  %>
+               <% }
+               else if (station[ans2[m]].line[0] == 'aqua'){%>
+               <%-  station[ans2[m]].aqua.down  %>
+               <%     }
+
+               else if (station[ans2[m]].line[0] == 'pink'){%>
+               <%-  station[ans2[m]].pink.down  %>
+                <% } 
+          }
+          else{ %>
+              <%    if(station[ans2[m]].line[0] == 'blue'){ %>
+              <%-  station[ans2[m]].blue.up  %>
+              <%   }
+              else if (station[ans2[m]].line[0] == 'green'){ %>
+              <%-  station[ans2[m]].green.up  %>
+              <%     }
+              else if (station[ans2[m]].line[0] == 'red'){%>
+               <%-  station[ans2[m]].red.up  %>
+              <%   }
+              else if (station[ans2[m]].line[0] == 'yellow'){%>
+              <%-  station[ans2[m]].yellow.up  %>
+              <%  }
+              else if (station[ans2[m]].line[0] == 'orange'){%>
+              <%-  station[ans2[m]].orange.up  %>
+              <%  }
+            else if (station[ans2[m]].line[0] == 'purple'){%>
+             <%-  station[ans2[m]].purple.up  %>
+            <%  }
+              else if (station[ans2[m]].line[0] == 'grey'){%>
+              <%-  station[ans2[m]].grey.up  %>
+             <%  }
+             else if (station[ans2[m]].line[0] == 'violet'){%>
+             <%-  station[ans2[m]].violet.up  %>
+             <% }
+             else if (station[ans2[m]].line[0] == 'magenta'){%>
+             <%-  station[ans2[m]].magenta.up  %>
+            <% }
+             else if (station[ans2[m]].line[0] == 'aqua'){%>
+             <%-  station[ans2[m]].aqua.up  %>
+             <%     }
+  
+            else if (station[ans2[m]].line[0] == 'pink'){%>
+            <%-  station[ans2[m]].pink.up  %>
+            <% } %>
+      <% }
+  }
      for(const lines in ans3){ %>
+      <% if(ans3[lines].length != 1){ %> 
         <% for (const node in ans3[lines]) { %>
+          <br>
           <div style="background-color:<%- station[ans3[lines][node]].line[0] %> ;" class="station_name">
                 
             <% if(station[ans3[lines][node]].line[0] == 'blue' || station[ans3[lines][node]].line[0] == 'red' || station[ans3[lines][node]].line[0] == 'green' ){
@@ -253,7 +341,6 @@
          <% } %>
           </div>
             <% if(j!=l){ 
-              
               %>
           <span style="size: 12px;color:<%- station[ans3[lines][node]].line[0] %> " class="material-symbols-outlined">
             arrow_downward
@@ -389,23 +476,14 @@ else if (station[ans3[lines][ans3[lines].length-1]].line[1] == 'magenta'){%>
 else if (station[ans3[lines][ans3[lines].length-1]].line[1] == 'aqua'){%>
 <%-  station[ans3[lines][ans3[lines].length-1]].aqua.up  %>
 <%     }
-
 else if (station[ans3[lines][ans3[lines].length-1]].line[1] == 'pink'){%>
 <%-  station[ans3[lines][ans3[lines].length-1]].pink.up  %>
 <%     } 
-
-
-
-
-
     %>
   </div>
-
-
           <br>
-        
        <% }} %>
-       <% } %>
+        <% }} %>
        <br>
   </div>
   <br><br>
@@ -454,7 +532,7 @@ border-radius: 12px;
   find.addEventListener('click',()=>{
     let from = document.getElementById('from').value
     let to = document.getElementById('to').value
-    console.log(from,to)
+    
     window.open(`/findroute?from=${from}&to=${to}`,"_self")
   })
 </script>

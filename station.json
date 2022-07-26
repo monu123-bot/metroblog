@@ -636,12 +636,12 @@
     } , 
     "126":{
         "name":"Satguru Ram Singh Marg",
-        "line":["green"], "green":{"up":"Plateform 2","down":"Plateform 1"},
+        "line":["green"], "green":{"up":"Plateform 1","down":"Plateform 2"},
         "dist":-2
     } , 
     "127":{
         "name":"Ashok Park Main",
-        "line":["green"], "green":{"up":"Plateform 2","down":"Plateform 1"},
+        "line":["green"], "green":{"up":"Plateform 1","down":"Plateform 2"},
         "dist":0
     } , 
     "128":{
@@ -651,7 +651,7 @@
     } , 
     "129":{
         "name":"Punjabi Bagh East",
-        "line":["green"], "green":{"up":"Plateform 2","down":"Plateform 1"},
+        "line":["green"], "green":{"up":"Plateform 1","down":"Plateform 2"},
         "dist":2.3
     } , 
     "130":{
@@ -661,92 +661,92 @@
     } , 
     "131":{
         "name":"Shivaji Park",
-        "line":["green"], "green":{"up":"Plateform 2","down":"Plateform 1"},
+        "line":["green"], "green":{"up":"Plateform 1","down":"Plateform 2"},
         "dist":3.9
     } , 
     "132":{
         "name":"Madipur",
-        "line":["green"], "green":{"up":"Plateform 2","down":"Plateform 1"},
+        "line":["green"], "green":{"up":"Plateform 1","down":"Plateform 2"},
         "dist":5.0
     } , 
     "133":{
         "name":"Paschim Vihar East",
-        "line":["green"], "green":{"up":"Plateform 2","down":"Plateform 1"},
+        "line":["green"], "green":{"up":"Plateform 1","down":"Plateform 2"},
         "dist":5.7
     } , 
     "134":{
         "name":"Paschim Vihar West",
-        "line":["green"], "green":{"up":"Plateform 2","down":"Plateform 1"},
+        "line":["green"], "green":{"up":"Plateform 1","down":"Plateform 2"},
         "dist":6.7
     } , 
     "135":{
         "name":"Peeragari",
-        "line":["green"], "green":{"up":"Plateform 2","down":"Plateform 1"},
+        "line":["green"], "green":{"up":"Plateform 1","down":"Plateform 2"},
         "dist":7.6
     } , 
     "136":{
         "name":"Udhyog Nagar",
-        "line":["green"], "green":{"up":"Plateform 2","down":"Plateform 1"},
+        "line":["green"], "green":{"up":"Plateform 1","down":"Plateform 2"},
         "dist":8.8
     } , 
     "137":{
         "name":"Maharaja Surajmal Stadium",
-        "line":["green"], "green":{"up":"Plateform 2","down":"Plateform 1"},
+        "line":["green"], "green":{"up":"Plateform 1","down":"Plateform 2"},
         "dist":9.5
     } , 
     "138":{
         "name":"Nangloi",
-        "line":["green"], "green":{"up":"Plateform 2","down":"Plateform 1"},
+        "line":["green"], "green":{"up":"Plateform 1","down":"Plateform 2"},
         "dist":10.3
     } , 
     "139":{
         "name":"Nangloi Railway Station",
-        "line":["green"], "green":{"up":"Plateform 2","down":"Plateform 1"},
+        "line":["green"], "green":{"up":"Plateform 1","down":"Plateform 2"},
         "dist":11.2
     } , 
     "140":{
         "name":"Rajdhani park",
-        "line":["green"], "green":{"up":"Plateform 2","down":"Plateform 1"},
+        "line":["green"], "green":{"up":"Plateform 1","down":"Plateform 2"},
         "dist":12.4
     } , 
     "141":{
         "name":"Mundaka",
-        "line":["green"], "green":{"up":"Plateform 2","down":"Plateform 1"},
+        "line":["green"], "green":{"up":"Plateform 1","down":"Plateform 2"},
         "dist":13.7
     } , 
     "142":{
         "name":"Mundaka Industrial Area",
-        "line":["green"], "green":{"up":"Plateform 2","down":"Plateform 1"},
+        "line":["green"], "green":{"up":"Plateform 1","down":"Plateform 2"},
         "dist":15.0
     } , 
     "143":{
         "name":"Ghevra",
-        "line":["green"], "green":{"up":"Plateform 2","down":"Plateform 1"},
+        "line":["green"], "green":{"up":"Plateform 1","down":"Plateform 2"},
         "dist":17.1
     } , 
     "144":{
         "name":"Tikri Kalan",
-        "line":["green"], "green":{"up":"Plateform 2","down":"Plateform 1"},
+        "line":["green"], "green":{"up":"Plateform 1","down":"Plateform 2"},
         "dist":18.9
     } , 
     "145":{
         "name":"Tikri Border",
-        "line":["green"], "green":{"up":"Plateform 2","down":"Plateform 1"},
+        "line":["green"], "green":{"up":"Plateform 1","down":"Plateform 2"},
         "dist":20.2
     } , 
     "146":{
         "name":"Pandit Shree Ram Marg",
-        "line":["green"], "green":{"up":"Plateform 2","down":"Plateform 1"},
+        "line":["green"], "green":{"up":"Plateform 1","down":"Plateform 2"},
         "dist":21.5
     } , 
     "147":{
         "name":"Bahadurgarh City",
-        "line":["green"], "green":{"up":"Plateform 2","down":"Plateform 1"},
+        "line":["green"], "green":{"up":"Plateform 1","down":"Plateform 2"},
         "dist":23.0
     } , 
     "148":{
         "name":"Bregadier Hosiyar Singh",
-        "line":["green"], "green":{"up":"Plateform 2","down":"Plateform 1"},
+        "line":["green"], "green":{"up":"Plateform 1","down":"Plateform 2"},
         "dist":24.8
     } , 
     "149":{
