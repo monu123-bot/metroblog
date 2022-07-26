@@ -632,12 +632,12 @@
     "125":{
         "name":"Kirti Nagar",
         "line":["green","blue"],"blue":{"up":"Plateform 1","down":"Plateform 2"}, "green":{"up":"Plateform 4","down":"Plateform 3"},
-        "dist":-3
+        "dist":5.3
     } , 
     "126":{
         "name":"Satguru Ram Singh Marg",
         "line":["green"], "green":{"up":"Plateform 1","down":"Plateform 2"},
-        "dist":-2
+        "dist":4.3
     } , 
     "127":{
         "name":"Ashok Park Main",
