@@ -252,7 +252,7 @@ app.get('/findroute',(req,res)=>{
       let ans2 = ans1[0]
       let ans3 = []
       let ans4 = []
-    
+     
       for(i=0;i<ans2.length;i++){
         if(i<ans2.length-1){ 
         if(ans2[i] == ans2[i+1]+1 || ans2[i] == ans2[i+1]-1){
