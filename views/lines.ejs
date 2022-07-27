@@ -71,19 +71,32 @@
  <br>
 
  <br>
+
+ 
       <div style="width:200px ;margin-left:auto;margin-right:auto;text-align: center;font-size: small;">
+        <h6 style="font-family: 'Lobster', cursive;
+        font-family: 'PT Sans Narrow', sans-serif;margin-left: auto;margin-right: auto;">Delhi metro <%- color %> line</h6><br>
         <% for (const item in station) { %>
           <%  if(station[item].line[0] == color) {  %>
 
               <div class="single_station d-flex bd-highlight">
                 <div class="left_lines p-2 flex-fill bd-highlight">
                 <% if(station[item].line.length == 2 ){ %>
-                     <div style="height:90%;width: 100%; background-color: <%- station[item].line[1] %>;"></div>
+                  <a href="/lines?color=<%- station[item].line[1] %>">
+                     <div   style="height:90%;width: 100%; background-color: <%- station[item].line[1] %>;"><span class="sidelines material-symbols-outlined">
+                      radio_button_checked
+                      </span></div></a>
 
                <% } %>
                <% if(station[item].line.length == 3 ){ %>
-                <div style="height:40%;width: 100%;margin-bottom: 5%; background-color: <%- station[item].line[1] %>;"></div>
-                <div style="height:40%;width: 100%; background-color: <%- station[item].line[2] %>"></div>
+                <a href="/lines?color=<%- station[item].line[1] %>">
+                <div  style="height:40%;width: 100%;margin-bottom: 5%; background-color: <%- station[item].line[1] %>;"><span class=" sidelines material-symbols-outlined">
+                  radio_button_checked
+                  </span></div></a>
+                <a href="/lines?color=<%- station[item].line[1] %>">
+                <div  style="height:40%;width: 100%; background-color: <%- station[item].line[2] %>"><span class=" sidelines material-symbols-outlined">
+                  radio_button_checked
+                  </span></div></a>
 
           <% } %>
                 </div>
@@ -100,17 +113,26 @@
                 </div>
                 <div class="right_lines p-2 flex-fill bd-highlight">
                   <% if(station[item].line.length == 2 ){ %>
-                    <div style="height:90%;width: 100%; background-color: <%- station[item].line[1] %>;"></div>
+                    <a href="/lines?color=<%- station[item].line[1] %>"> <div  style="height:90%;width: 100%; background-color: <%- station[item].line[1] %>;"><span class="sidelines material-symbols-outlined">
+                      radio_button_checked
+                      </span></div></a>
 
               <% } %>
               <% if(station[item].line.length == 3 ){ %>
-               <div style="height:40%;width: 100%;margin-bottom: 5%; background-color: <%- station[item].line[1] %>;"></div>
-               <div style="height:40%;width: 100%; background-color: <%- station[item].line[2] %>"></div>
+                <a href="/lines?color=<%- station[item].line[1] %>">
+               <div style="height:40%;width: 100%;margin-bottom: 5%; background-color: <%- station[item].line[1] %>;"><span class="sidelines material-symbols-outlined">
+                radio_button_checked
+                </span></div></a>
+               <a href="/lines?color=<%- station[item].line[1] %>">
+               <div   style="height:40%;width: 100%; background-color: <%- station[item].line[2] %>"><span class="sidelines material-symbols-outlined">
+                radio_button_checked
+                </span></div></a>
 
          <% } %>
                 </div>
               </div>
-              <div style="width:20px ;margin-left:auto;margin-right:auto; height:30px;background-color:<%- color %>"></div>
+            
+              <div   style="width:20px ;margin-left:auto;margin-right:auto; height:30px;background-color:<%- color %>"></div>
 
 
 
@@ -121,7 +143,10 @@
       <br><br>
 </body>
 <style>
-  
+  .sidelines{
+  font-size: 20px;
+
+  }
   .single_station{
    
   } 
@@ -160,4 +185,30 @@ border-radius: 12px;
 
   border-radius: 0 0 240px 50%/60px;
 }
+.hide{
+  display: none;
+}
+.show{
+  display: inline;
+}
 </style>
+<script>
+const sidelines= document.querySelectorAll('.sidelines');
+
+
+setInterval(()=>{
+  
+  sidelines.forEach(box => {
+  box.style.color = 'white';
+  
+});
+},500)
+setInterval(()=>{
+  
+  sidelines.forEach(box => {
+  box.style.color = 'black';
+  
+});
+},1000)
+
+</script>
