@@ -255,7 +255,7 @@
         m+=1
        
     } %>
-    <span class="material-symbols-outlined">
+    <span class="arrows material-symbols-outlined">
       follow_the_signs
       </span>
   Catch the train from 
@@ -360,7 +360,7 @@
         <div>
         <% if(j!=l ){
           if(station[ans2[j]].line[0] != station[ans2[j-1]].line[0]){   %>
-            <span class="material-symbols-outlined">
+            <span class="arrows material-symbols-outlined">
               follow_the_signs
               </span>
          Move towards 
@@ -515,4 +515,20 @@ border-radius: 12px;
     
     window.open(`/findroute?from=${from}&to=${to}`,"_self")
   })
+  const arrows= document.querySelectorAll('.arrows');
+
+setInterval(()=>{
+  
+  arrows.forEach(box => {
+  box.style.color = 'white';
+  
+});
+},500)
+setInterval(()=>{
+  
+  arrows.forEach(box => {
+  box.style.color = 'black';
+  
+});
+},1000)
 </script>
