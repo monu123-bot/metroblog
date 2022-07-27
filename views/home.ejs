@@ -434,10 +434,14 @@ if( (parseInt(lines)+parseInt(1)) < l1){
      <% } %>
   <% }
   else if (station[ans3[lines][ans3[lines].length-1]].line[1] == 'magenta'){%>
-    <% if (ans3[l3][0]-ans3[l3][1] < 0){ %> 
+    <% if (ans3[l3][0]-ans3[l3][1] < 0){  %> 
       <%-  station[ans3[l3][0]].magenta.up  %>
       <% }
-      else{ %>
+      else{ 
+        
+      console.log(ans3[l3][0])
+      %>
+        
         <%-  station[ans3[l3][0]].magenta.down  %>
      <% } %>
   <% }
