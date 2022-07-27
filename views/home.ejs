@@ -17,7 +17,9 @@
     crossorigin="anonymous"></script>
   <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=PT+Sans+Narrow&display=swap" rel="stylesheet">
   <title>Search Route</title>
 
 </head>
@@ -25,14 +27,17 @@
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">metroinfoxyz.com</a>
+      <a style="font-family: 'PT Sans Narrow', sans-serif;" class="navbar-brand" href="#">
+        <span class="material-symbols-outlined">
+        train 
+        </span>metroinfoxyz.com </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="/">Home</a>
+            <a class="nav-link" href="/">Find Route</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
@@ -59,7 +64,9 @@
       </div>
     </div>
   </nav>
-  <h3>Find the shortest route for your journey</h3>
+  <h3 style="font-family: 'Lobster', cursive;
+  font-family: 'PT Sans Narrow', sans-serif;
+  ">Make it easy</h3>
   <br>
   <div id="search_box" style="width:300px ;border-radius:12px;padding:5px;margin-left: auto;margin-right: auto;background-color: aliceblue;">
       <b><label for="from"> From</label></b>
@@ -233,15 +240,16 @@
    </div>
  <br>
  <br>
+
   <div id="showroute" style="width: 300px; margin-left:auto;margin-right:auto">
+    <hr>
+    <br>
     <%
      if(l>1){
 
       let m = 0
       while(1){
         if((ans2[m] == ans2[m+1]+1) || (ans2[m] == ans2[m+1]-1)){
-            
-       
        break
         }
         m+=1
