@@ -214,7 +214,7 @@
         </tr>
         <tr>
           <th scope="row">Station</th>
-          <td><i><%- l-l1+1 %></i></td>
+          <td><i><%- l-l1+1+1 %></i></td>
         </tr>
       </tbody>
     </table>
@@ -250,7 +250,7 @@
       <span class="material-symbols-outlined">
         follow_the_signs
         </span>
-         <%  if( station[ans2[m]].dist > station[ans2[m+1]].dist){ %>
+         <%  if( station[ans2[m]].dist > station[ans2[1]].dist){ %>
                 <%  if(station[ans2[m]].line[0] == 'blue'){ %>
                       <%-  station[ans2[m]].blue.down  %>
                 <%   }
@@ -445,44 +445,103 @@
   follow_the_signs
   </span>
 <%
-
-if(station[ans3[lines][ans3[lines].length-1]].line[1] == 'blue'){ %>
-  <%-  station[ans3[lines][ans3[lines].length-1]].blue.up  %>
-<%   }
-else if (station[ans3[lines][ans3[lines].length-1]].line[1] == 'green'){ %>
-  <%-  station[ans3[lines][ans3[lines].length-1]].green.up  %>
-<%     }
-else if (station[ans3[lines][ans3[lines].length-1]].line[1] == 'red'){%>
-  <%-  station[ans3[lines][ans3[lines].length-1]].red.up  %>
-<%   }
-else if (station[ans3[lines][ans3[lines].length-1]].line[1] == 'yellow'){%>
-  <%-  station[ans3[lines][ans3[lines].length-1]].yellow.up  %>
-<%  }
-else if (station[ans3[lines][ans3[lines].length-1]].line[1] == 'orange'){%>
-  <%-  station[ans3[lines][ans3[lines].length-1]].orange.up  %>
-<%  }
-else if (station[ans3[lines][ans3[lines].length-1]].line[1] == 'purple'){%>
-  <%-  station[ans3[lines][ans3[lines].length-1]].purple.up  %>
-<%  }
-else if (station[ans3[lines][ans3[lines].length-1]].line[1] == 'grey'){%>
-  <%-  station[ans3[lines][ans3[lines].length-1]].grey.up  %>
-<%  }
-else if (station[ans3[lines][ans3[lines].length-1]].line[1] == 'violet'){%>
-  <%-  station[ans3[lines][ans3[lines].length-1]].violet.up  %>
+if( (parseInt(lines)+parseInt(1)) < l1){ 
+  let l3 = parseInt(lines)+parseInt(1) 
+  %>
+ <%  if(station[ans3[lines][ans3[lines].length-1]].line[1] == 'blue'){ %>
+    <% if (ans3[l3][0]-ans3[l3][1] < 0){ %> 
+      <%-  station[ans3[l3][0]].blue.up  %>
+      <% }
+      else{ %>
+        <%-  station[ans3[l3][0]].blue.down  %>
+     <% } %>
+  <%   }
+  else if (station[ans3[lines][ans3[lines].length-1]].line[1] == 'green'){ %>
+    <% if (ans3[l3][0]-ans3[l3][1] < 0){ %> 
+      <%-  station[ans3[l3][0]].green.up  %>
+      <% }
+      else{ %>
+        <%-  station[ans3[l3][0]].green.down  %>
+     <% } %>
+  <%     }
+  else if (station[ans3[lines][ans3[lines].length-1]].line[1] == 'red'){%>
+    <% if (ans3[l3][0]-ans3[l3][1] < 0){ %> 
+      <%-  station[ans3[l3][0]].red.up  %>
+      <% }
+      else{ %>
+        <%-  station[ans3[l3][0]].red.down  %>
+     <% } %>
+  <%   }
+  else if (station[ans3[lines][ans3[lines].length-1]].line[1] == 'yellow'){%>
+    <% if (ans3[l3][0]-ans3[l3][1] < 0){ %> 
+      <%-  station[ans3[l3][0]].yellow.up  %>
+      <% }
+      else{ %>
+        <%-  station[ans3[l3][0]].yellow.down  %>
+     <% } %>
+  <%  }
+  else if (station[ans3[lines][ans3[lines].length-1]].line[1] == 'orange'){%>
+    <% if (ans3[l3][0]-ans3[l3][1] < 0){ %> 
+      <%-  station[ans3[l3][0]].orange.up  %>
+      <% }
+      else{ %>
+        <%-  station[ans3[l3][0]].orange.down  %>
+     <% } %>
+  <%  }
+  else if (station[ans3[lines][ans3[lines].length-1]].line[1] == 'purple'){%>
+    <% if (ans3[l3][0]-ans3[l3][1] < 0){ %> 
+      <%-  station[ans3[l3][0]].purple.up  %>
+      <% }
+      else{ %>
+        <%-  station[ans3[l3][0]].purple.down  %>
+     <% } %>
+  <%  }
+  else if (station[ans3[lines][ans3[lines].length-1]].line[1] == 'grey'){%>
+    <% if (ans3[l3][0]-ans3[l3][1] < 0){ %> 
+      <%-  station[ans3[l3][0]].grey.up  %>
+      <% }
+      else{ %>
+        <%-  station[ans3[l3][0]].grey.down  %>
+     <% } %>
+  <%  }
+  else if (station[ans3[lines][ans3[lines].length-1]].line[1] == 'violet'){%>
+    <% if (ans3[l3][0]-ans3[l3][1] < 0){ %> 
+      <%-  station[ans3[l3][0]].violet.up  %>
+      <% }
+      else{ %>
+        <%-  station[ans3[l3][0]].violet.down  %>
+     <% } %>
+  <% }
+  else if (station[ans3[lines][ans3[lines].length-1]].line[1] == 'magenta'){%>
+    <% if (ans3[l3][0]-ans3[l3][1] < 0){ %> 
+      <%-  station[ans3[l3][0]].magenta.up  %>
+      <% }
+      else{ %>
+        <%-  station[ans3[l3][0]].magenta.down  %>
+     <% } %>
+  <% }
+  else if (station[ans3[lines][ans3[lines].length-1]].line[1] == 'aqua'){%>
+    <% if (ans3[l3][0]-ans3[l3][1] < 0){ %> 
+      <%-  station[ans3[l3][0]].aqua.up  %>
+      <% }
+      else{ %>
+        <%-  station[ans3[l3][0]].aqua.down  %>
+     <% } %>
+  <%     }
+  else if (station[ans3[lines][ans3[lines].length-1]].line[1] == 'pink'){%>
+    <% if (ans3[l3][0]-ans3[l3][1] < 0){ %> 
+      <%-  station[ans3[l3][0]].pink.up  %>
+      <% }
+      else{ %>
+        <%-  station[ans3[l3][0]].pink.down  %>
+     <% } %>
+  <%     } %>
+ 
 <% }
-else if (station[ans3[lines][ans3[lines].length-1]].line[1] == 'magenta'){%>
-<%-  station[ans3[lines][ans3[lines].length-1]].magenta.up  %>
-<% }
-else if (station[ans3[lines][ans3[lines].length-1]].line[1] == 'aqua'){%>
-<%-  station[ans3[lines][ans3[lines].length-1]].aqua.up  %>
-<%     }
-else if (station[ans3[lines][ans3[lines].length-1]].line[1] == 'pink'){%>
-<%-  station[ans3[lines][ans3[lines].length-1]].pink.up  %>
-<%     } 
     %>
   </div>
           <br>
-       <% }} %>
+       <%  }} %>
         <% }} %>
        <br>
   </div>

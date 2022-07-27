@@ -210,6 +210,7 @@ app.get('/',(req,res)=>{
     l = 0
     to = 0
     from = 0
+   
   res.render('home',{ans3,station,l,ans2,to,from})
   })
 
@@ -279,7 +280,8 @@ app.get('/findroute',(req,res)=>{
         }
       }
     let l = ans2.length
-    console.log(station[3].red.up)  
+   
+    console.log(ans3)
       res.render('home',{ans3,station,l,ans2,to,from})
     ans2 = []
     ans1 = []
