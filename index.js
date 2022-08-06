@@ -171,37 +171,10 @@ function print_paths(adj,n,s,e){
     }
 }
 
-// function createMatrix(){
-//   mat = new Array(264)
-//   for (let i = 0;i<265; i++){
-//     mat[i] = new Array(6)
-//     for (j = 0;j<6;j++){
-//       mat[i][j] = 0
-//     }
-    
-//   }
-//   fs.readFile('./graph.json','utf-8',(err,arr)=>{
-//     const data = JSON.parse(arr)
-//     for (const item in data) {
-//      for(const item1 in data[item] ){ 
-//       mat[item][item1] = 1
-//       mat[item1][item] = 1
-//      }
-//   }
-//   console.log(mat)
-// })
-
-// }
-// createMatrix()
-
-
 
 app.get('/',(req,res)=>{
   
-  // fs.writeFile('graph.jsonon',`${arr1}` , function (err) {
-  //   if (err) throw err;
-  //   console.log('Replaced!');
-  // });
+
   fs.readFile('./station.json','utf-8',(err,arr)=>{
     const station = JSON.parse(arr)
   
